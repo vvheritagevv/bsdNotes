@@ -14,7 +14,7 @@ Contents:
    ServerMaintenance.rst
    logs.rst
    cryptoLocker.rst
-
+   suspendResume.rst
 
 Indices and tables
 ==================
