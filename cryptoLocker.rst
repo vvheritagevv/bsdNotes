@@ -28,3 +28,5 @@ On Monday at 2pm a 2nd manager opened an email with the same cryptolocker virus 
 
 While this was effective. It also rolled back some drives that were unaffected by the cryptolocker. I may have been able to roll back specific directories, but I was in a hurry. It took less than 15 seconds for me to be back up and running after the 2nd infection. The 1st infection took me almost 24 hours. That is why you use snapshots ALL THE TIME!!!!
 
+
+
