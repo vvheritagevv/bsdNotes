@@ -32,7 +32,7 @@ This command will list the acpi states. I found the following:
 Got most of the info from the `Freebsd <https://www.freebsd.org/doc/en/books/handbook/acpi-overview.html>`_ acpi page. 
 
     
-*TODO find the lid switch and configure it.*
+*TODO find the lid switch and configure it. Just need to reboot*
 
 made a change to /etc/sysctl.conf
 
