@@ -8,6 +8,9 @@ Suspend and Resume seems to work with the following command:
     
     % sudo acpiconf -s S3
 
+Networking and USB come up after the resume. The resume happens when the lid is
+open and not when the power button is pressed.
+
 You can check your sleep state using:
 
 .. code:: bash
@@ -26,7 +29,17 @@ This command will list the acpi states. I found the following:
     hw.acpi.supported_sleep_state: S3 S4 S5
 
 
-Got most of the info from the `Freebsd <https://www.freebsd.org/doc/en/books/handbook/acpi-overview.html>`_ 
+Got most of the info from the `Freebsd <https://www.freebsd.org/doc/en/books/handbook/acpi-overview.html>`_ acpi page. 
 
     
-TODO find the lid switch and configure it
+*TODO find the lid switch and configure it.*
+
+made a change to /etc/sysctl.conf
+
+.. code:: bash
+
+    hw.acpi.lid_switch_state=S3
+
+found the code at `freebsd forum <https://forums.freebsd.org/threads/thinkpad-t410i-troubleshooting-resume-from-s3.50713>`_
+
+
