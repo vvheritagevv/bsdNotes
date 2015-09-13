@@ -25,4 +25,8 @@ This command will list the acpi states. I found the following:
     hw.acpi.power_button_state: S5
     hw.acpi.supported_sleep_state: S3 S4 S5
 
+
+Got most of the info from the `Freebsd <https://www.freebsd.org/doc/en/books/handbook/acpi-overview.html>`_ 
+
+    
 TODO find the lid switch and configure it
