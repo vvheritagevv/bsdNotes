@@ -15,6 +15,7 @@ Contents:
    logs.rst
    cryptoLocker.rst
    suspendResume.rst
+   vimperatorUse.rst
 
 Indices and tables
 ==================
