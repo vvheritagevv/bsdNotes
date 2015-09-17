@@ -10,6 +10,7 @@ A few of the popular commands:
     2.  open - opens the given url or search in the current tab
     3.  f - allows you to "click" links on the page by typing the number that comes up
     4.  d - closes the current tab
-    5.  ctrl-tab - changes the current tab
+    5.  ctrl-tab - cycle forward through the tabs
+    6.  ctrl-shift-tab  - cycle backward through the tabs  
 
 

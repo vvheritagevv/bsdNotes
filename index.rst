@@ -16,6 +16,8 @@ Contents:
    cryptoLocker.rst
    suspendResume.rst
    vimperatorUse.rst
+   pf_setup.rst
+
 
 Indices and tables
 ==================
