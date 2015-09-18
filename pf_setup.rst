@@ -35,7 +35,7 @@ return* will have send the *Connection refused* message back to the sender.
 will block packets which come from interfaces that are not possible. Finally we
 block anything that we have no route back to.
 
-Next I block everything and log it if it does not match any rule below. 
+Next I block everything and log it if it does not match any rule below.
 
 .. code:: bash
 
@@ -46,7 +46,33 @@ Next I block everything and log it if it does not match any rule below.
 Then I allow out all traffic
 
 .. code:: bash
-    
+
     pass out keep state
 
-I then set up for `Fail2ban <http://www.fail2ban.org>`_ 
+I then set up for `Fail2ban <http://www.fail2ban.org>`_. In the **/usr/local/etc/fail2ban** edit the **jail.d/ssh-pf.local** file.
+Use the following settings:
+
+.. code:: bash
+    [ssh-pf]
+    enabled = true
+    filter = sshd
+    action = pf
+    logpath = /var/log/auth.log #location of the logfile that you want fail2ban to parse
+    findtime = 600
+    maxretry = 3
+    bantime = 3600
+
+Then in the **action.d/pf.conf** make sure that the following is in it:
+
+.. code:: bash
+
+    [Definition]
+    actionstart =
+    actionstop =
+    actioncheck =
+    actionban = /sbin/pfctl -t <tablename> -T add <ip>/32
+    actionunban = /sbin/pfctl -t <tablename> -T delete <ip>/32
+
+    [Init]
+    tablename = fail2ban
+
