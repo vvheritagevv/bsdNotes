@@ -23,7 +23,7 @@ Add the following line:
 
     @   daily   root    freebsd-update -t "username" cron
 
-Substitute your username for **"username"**
+Substitute your username for *"username"*. The system will send you a message if there are any updates that need applied.
 
 Then just run:
 
