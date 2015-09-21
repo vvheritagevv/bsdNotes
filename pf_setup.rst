@@ -1,4 +1,4 @@
-Setting Up PF and Fail2ban on the server
+Setting up PF and Fail2ban on the server
 =========================================
 
 
@@ -29,7 +29,7 @@ Ill show what I use here.
     antispoof quick for lo0 inet
     block in from no-route to any
 
-The skip on lo0 allows for things on the loopback adapter. The *block-policy
+The *skip on lo0* allows for things on the loopback adapter. The *block-policy
 return* will have send the *Connection refused* message back to the sender.
 *scrub in all*  normalizes fragmented packets. *antispoof quick for lo0 inet*
 will block packets which come from interfaces that are not possible. Finally we
