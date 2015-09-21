@@ -17,6 +17,7 @@ Contents:
    suspendResume.rst
    vimperatorUse.rst
    pf_setup.rst
+   investigate.rst
 
 
 Indices and tables
