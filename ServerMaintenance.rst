@@ -23,6 +23,8 @@ Add the following line:
 
     @   daily   root    freebsd-update -t "username" cron
 
+Substitute your username for **"username"**
+
 Then just run:
 
 .. code-block:: none
