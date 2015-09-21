@@ -18,6 +18,7 @@ Contents:
    vimperatorUse.rst
    pf_setup.rst
    investigate.rst
+   zfs_notes.rst
 
 
 Indices and tables
