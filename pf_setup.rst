@@ -53,6 +53,7 @@ I then set up for `Fail2ban <http://www.fail2ban.org>`_. In the **/usr/local/etc
 Use the following settings:
 
 .. code:: bash
+
     [ssh-pf]
     enabled = true
     filter = sshd
