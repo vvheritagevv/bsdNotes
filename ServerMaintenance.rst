@@ -11,6 +11,24 @@ To update the os:
 
 Have to reboot after if there are kernel updates.
 
+I have also set up the root crontab to download updates daily and all I have to do is apply them:
+
+.. code-block:: none
+
+    % vim /etc/crontab
+
+Add the following line:
+
+.. code-block:: none
+
+    @   daily   root    freebsd-update -t "username" cron
+
+Then just run:
+
+.. code-block:: none
+
+    % freebsd-update install
+
 Updating Optional Software
 ==========================
 
