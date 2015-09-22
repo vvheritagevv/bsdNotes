@@ -18,7 +18,7 @@ Over that weekend I began looking at the snapshot feature more heavily in ZFS. `
 
 .. note:: When setting up ZFS, mountpoints, samba shares, and user directories, be sure to make your ZFS datasets correctly. You can never have too many.
 
-When I initially set up this server I did not set it up with snapshots in mind. It was my 1st attempt at ZFS. I used ZFS because `Alan Jude <http://www.allanjude.com/>`_ told me to on the `BSDNow <http://www.bsdnow.tv/>`_ podcast. I did not set up separate datasets for my samba shares. I did not have separate datasets for the individual users home directories. I was using the schedule from Michaels blog post and I was snapshotting everything. Now since my server only uses a total of 13GB, and I have 500GB drives in it, I was not worried about running out of room any time soon. But I had a lot of snapshots that I simply wasnt going to need.
+When I initially set up this server I did not set it up with snapshots in mind. It was my 1st attempt at ZFS. I used ZFS because I had heard so many good things from `Alan Jude <http://www.allanjude.com/>`_ on the `BSDNow <http://www.bsdnow.tv/>`_ podcast. I did not set up separate datasets for my samba shares. I did not have separate datasets for the individual users home directories. I was using the schedule from Michaels blog post and I was snapshotting everything. Now since my server only uses a total of 13GB, and I have 500GB drives in it, I was not worried about running out of room any time soon. But I had a lot of snapshots that I simply wasnt going to need.
 
 On Monday at 2pm a 2nd manager opened an email with the same cryptolocker virus in it. I did not find out about this one until 7:30 am on tuesday. Once i found out about it I took samba down, and restored my samba drives from the snapshot an hour before the infection.
 
@@ -28,6 +28,7 @@ On Monday at 2pm a 2nd manager opened an email with the same cryptolocker virus 
 
 While this was effective. It also rolled back some drives that were unaffected by the cryptolocker. I may have been able to roll back specific directories, but I was in a hurry. It took less than 15 seconds for me to be back up and running after the 2nd infection. The 1st infection took me almost 24 hours. That is why you use snapshots ALL THE TIME!!!!
 
-Since then I have separated my data out so that the file shares are in their own
-datasets
+I have since added datasets for the individual shares as well as home directories for the individual users. I can now roll back the snapshots for those datasets on an as needed basis. I will no longer have to restore things that are un-needed. see :doc:` ZFS Notes </zfs_notes>`
+
+My next step is to add a 2nd ZFS box to send my snapshots to for an additional backup.
 
