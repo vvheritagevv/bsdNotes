@@ -28,7 +28,7 @@ On Monday at 2pm a 2nd manager opened an email with the same cryptolocker virus 
 
 While this was effective. It also rolled back some drives that were unaffected by the cryptolocker. I may have been able to roll back specific directories, but I was in a hurry. It took less than 15 seconds for me to be back up and running after the 2nd infection. The 1st infection took me almost 24 hours. That is why you use snapshots ALL THE TIME!!!!
 
-I have since added datasets for the individual shares as well as home directories for the individual users. I can now roll back the snapshots for those datasets on an as needed basis. I will no longer have to restore things that are un-needed. see :doc:` ZFS Notes </zfs_notes>`
+I have since added datasets for the individual shares as well as home directories for the individual users. I can now roll back the snapshots for those datasets on an as needed basis. I will no longer have to restore things that are un-needed. see :doc:`ZFS Notes </zfs_notes>`
 
 My next step is to add a 2nd ZFS box to send my snapshots to for an additional backup.
 
