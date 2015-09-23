@@ -19,6 +19,7 @@ Contents:
    pf_setup.rst
    investigate.rst
    zfs_notes.rst
+   tmuxSetup.rst
 
 
 Indices and tables
