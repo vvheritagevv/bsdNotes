@@ -23,3 +23,4 @@ Then call mplayer with the playlist name as an argument
 
     % mplayer -playlist ~/"playlistname"
 
+Also, add the ``-shuffle`` argument to shuffle the playlist.
