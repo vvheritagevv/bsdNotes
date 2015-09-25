@@ -20,6 +20,7 @@ Contents:
    investigate.rst
    zfs_notes.rst
    tmuxSetup.rst
+   commandsToRemember.rst
 
 
 Indices and tables
