@@ -1,4 +1,4 @@
-Unix Commands To Remember
+Unix/FreeBSD Commands To Remember
 ****************************
 
 This will be a list of the commands and tricks that I need to remember.
@@ -8,7 +8,7 @@ This will be a list of the commands and tricks that I need to remember.
 Creating playlists for mplayer
 ===============================
 
-I use use mplayer from the commandline to play music. It can play from a text file playlist with the ``-playlist`` argument
+I use use mplayer from the command line to play music. It can play from a text file playlist with the ``-playlist`` argument
 To generate the playlist I use the find command.
 
 .. code:: bash
