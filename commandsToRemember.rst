@@ -16,10 +16,10 @@ To generate the playlist I use the find command.
     % find "`pwd`" -name "*.mp3" > "playlistname"
     % find "`pwd`" -name "*.mp3" -o -name "*.m4a" > "playlistname"
 
-The ``"`pwd`"`` gets a full path when the playlist is created
+The ``"`pwd`"`` gets a full path when the playlist is created.
 The 2nd line gets us multiple file types.
 
-Then call mplayer with the playlist name as an argument
+Then call mplayer with the playlist name as an argument.
 
 .. code:: bash
 
