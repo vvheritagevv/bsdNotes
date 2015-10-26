@@ -26,3 +26,21 @@ Then call mplayer with the playlist name as an argument.
     % mplayer -playlist ~/"playlistname"
 
 Also, add the ``-shuffle`` argument to shuffle the playlist.
+
+
+
+Deleting Files with a ~ in them
+=================================
+
+
+I used:
+
+.. code:: bash
+
+    % find . -name "~*" -exec ls -i {} \;
+
+i verified that i could see them and then,
+
+.. code:: bash
+
+    % find . -name "~*" -delete
