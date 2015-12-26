@@ -21,6 +21,7 @@ Contents:
    zfs_notes.rst
    tmuxSetup.rst
    commandsToRemember.rst
+   openbsdBridge.rst
 
 
 Indices and tables
