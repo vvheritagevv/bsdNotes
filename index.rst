@@ -22,6 +22,7 @@ Contents:
    tmuxSetup.rst
    commandsToRemember.rst
    openbsdBridge.rst
+   gitServer.rst
 
 
 Indices and tables
