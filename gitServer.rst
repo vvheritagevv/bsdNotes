@@ -11,12 +11,14 @@ All examples in this are pulled http://bin63.com/how-to-setup-a-git-repository-o
 
 
 Add the Groups
+
 .. code:: bash
 	# pw groupadd -n git -g 9418
 	# pw useradd -n git -u 9418 -g git -c git -d /git -s /usr/local/libexec/git-core/git-shell -h -
 	# mkdir /git/
 
 Then set up the permissions
+
 .. code:: bash
 	# chown git:git /git/
 	# chmod 755 /git
@@ -27,6 +29,7 @@ Then set up the permissions
 At this step the guides tell you to setup ssh keys. I will add that later but did not do it at this time. 
 
 I then modified /etc/rc.conf for git
+
 .. code:: bash
 	git_daemon_enable="YES"
 	git_daemon_directory="/git"
@@ -38,21 +41,25 @@ Then start git_daemon
 
 At this point I created the separate dataset for the /git and /git/base directories. With zfs you have to create the parent and the child dataset though you only set a mount point for the one that you want to use. There is probably a way to do this with one command but I always create them separate.
 I also set the mount point in a separate command, again there is probably a way to do this with one command but this works so I dont worry about it. 
+
 .. code:: bash
 	# zfs create -o compress=lz4 tank/git
 	# zfs create -o compress=lz4 tank/git/base
 	# zfs set mountpoint=/git/base tank/git/base
 
 Now it is time to test and use the git server. You have to set up the repo on the server before you can push to it from the client. 
+
 .. code:: bash
 	% mkdir /git/base/test.git
 	% cd /git/base/test.git && git init --bare --shared
 
 That should be good enough but for reasons unknown, i was unable to push to the repo until I changed the ownership.
+
 .. code:: bash
 	# chown -R git:git .
 
 On the client machine create a new repo and add the origin to point to the server repo that we just created. 
+
 .. code:: bash
 	% mkdir test
 	% cd test && git init
