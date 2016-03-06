@@ -18,6 +18,12 @@ Add the Groups:
 	# pw useradd -n git -u 9418 -g git -c git -d /git -s /usr/local/libexec/git-core/git-shell -h -
 	# mkdir /git/
 
+Since I am not using ssh keys in this example I have to set a password for the git user:
+
+.. code::bash
+
+	# passwd git
+
 Then set up the permissions:
 
 .. code:: bash
@@ -45,7 +51,7 @@ Then start git_daemon:
 	/usr/local/etc/rc.d/git_daemon start
 
 At this point I created the separate dataset for the /git and /git/base directories. With zfs you have to create the parent and the child dataset though you only set a mount point for the one that you want to use. There is probably a way to do this with one command but I always create them separate.
-I also set the mount point in a separate command, again there is probably a way to do this with one command but this works so I dont worry about it. 
+I also set the mount point in a separate command, again there is probably a way to do this with one command but this works so I don't worry about it. 
 
 .. code:: bash
 
@@ -60,7 +66,7 @@ Now it is time to test and use the git server. You have to set up the repo on th
 	% mkdir /git/base/test.git
 	% cd /git/base/test.git && git init --bare --shared
 
-That should be good enough but for reasons unknown, i was unable to push to the repo until I changed the ownership.
+That should be good enough but for reasons unknown, I was unable to push to the repo until I changed the ownership.
 
 .. code:: bash
 
