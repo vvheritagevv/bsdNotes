@@ -20,7 +20,7 @@ Add the Groups:
 
 Since I am not using ssh keys in this example I have to set a password for the git user:
 
-.. code::bash
+.. code:: bash
 
 	# passwd git
 
