@@ -23,6 +23,7 @@ Contents:
    commandsToRemember.rst
    openbsdBridge.rst
    gitServer.rst
+   lumina_dmenu.rst
 
 
 Indices and tables
