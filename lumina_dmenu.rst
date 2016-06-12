@@ -25,3 +25,8 @@ I did more web searching and found that lumina gets the keyboard shortcuts from 
 	Mod1 P :Exec `dmenu_path | dmenu ` && "exec $exe"
 
 I added that line to the config. That maps alt-p to open dmenu. One thing that I noticed, if you change a map this way, it does not activate right away. I had alt-p mapped to lumina-search. When i changed it to the above line, it did not update it to dmenu. Logging out and back in again solved the issue. There may be a command to run to automatically update, probably look at the source for the gui app as it has an apply feature that seems to do it, but I was able to get it to work regardless. 
+
+.. note:: 
+
+	As with anything you find on the web, I could be completely and utterly wrong. Do your own due diligence and be careful when you copy/paste shit from the web. If I have something wrong, and you want to help correct it, shoot me an email. 
+
