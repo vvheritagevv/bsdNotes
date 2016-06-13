@@ -18,7 +18,7 @@ I then saw down near the bottom of the page that I needed to add some other elem
 
 That worked the way I wanted. Now I just needed a way to get it to launch from a keyboard shortcut.   
 I did not see a way to add a keyboard shortcut to the lumina shortcuts gui. It looked like they were predefined. So I looked at doing it in fluxbox itself. The fluxbox config is located in ``~/.fluxbox/keys`` file. I made some changes to that file and restarted fluxbox. and that did not work. I could not get any of the .fluxbox keys to work. 
-I did more web searching and found that lumina gets the keyboard shortcuts from a config in ``~/.lumina/lumina-keys`` file. I could change them in there. 
+I did more web searching and found that lumina gets the keyboard shortcuts from a config in ``~/.lumina/fluxbox-keys`` file. I could change them in there. 
 
 .. code:: bash
 	
