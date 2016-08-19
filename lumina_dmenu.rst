@@ -28,3 +28,10 @@ I added that line to the config. That maps alt-p to open dmenu. One thing that I
 
 .. note:: As with anything you find on the web, I could be completely and utterly wrong. Do your own due diligence and be careful when you copy/paste shit from the web. If I have something wrong, and you want to help correct it, shoot me an email. 
 
+I got the following notes from Ken Moore, creator and developer of the wonderful Lumina Desktop:
+
+.. note:: 
+- Keyboard shortcuts for launching applications in Lumina There are actually 2 built-in keyboard shortcuts for finding/launching apps. Alt-F2 is the traditional Fluxbox shortcut, and in Lumina that launches lumina-search for finding an application/file on demand (no mouse required). The second shortcut is a bit newer (0.9.1+ if I recall) and requires the new "Start Menu" plugin to be used: tap the Windows/Meta key to bring up the start menu, then start typing to automatically search for applications/binaries. Hitting enter once you found the right app will automatically launch it for you.
+- The ~/.fluxbox directory is where configs are placed if you actually logged into fluxbox (not Lumina). For older versions of Lumina (pre-0.9.1), the configs are located in ~/.lumina/fluxbox-, whereas with 0.9.1+ they are located in `${XDG_CONFIG_HOME}/lumina-desktop/fluxbox-(typically~/.config/lumina-desktop/fluxbox-*`). The auto-reload mechanisms were also fixed up quite a bit in more recent versions so that modifying those files will automatically trigger fluxbox to reload it's configs.
+
+I will investigate and make sure that my notes are corrected.
