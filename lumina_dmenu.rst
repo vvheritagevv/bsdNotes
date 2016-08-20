@@ -1,6 +1,9 @@
 dmenu on lumina
 ================
 
+.. warning:: These notes are for version 0.9.0
+
+
 I was searching for a way to open programs from the keyboard in the Lumina Desktop. I had used dmenu in spectrwm and was basically looking for a replacement. 
 Searching around the net I found a few snippets on how to get it to run. (found it `here <https://urukrama.wordpress.com/2008/02/07/using-dmenu-in-pekwm-and-openbox/>`_ )
 
